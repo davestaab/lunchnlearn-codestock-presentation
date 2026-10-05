@@ -42,8 +42,20 @@ The five-part shape every Takeaway follows: what it is → the problem it solves
 _Avoid_: sections, template
 
 **First Step**:
-The one small, concrete action the Audience could take next week to start a Takeaway. It assumes the team is starting from zero, or for OpenTelemetry, extending it to projects that don't use it yet.
+The one small, concrete action the Audience could take next week to start a Takeaway. It assumes the team is starting from zero.
 _Avoid_: next steps, action items, how it applies here
+
+**Source Session**:
+The CodeStock session behind a Takeaway. Its speaker is credited, and the deck says so wherever it deliberately shifts the session's focus.
+_Avoid_: talk, session
+
+**Six Principles**:
+The six closing points of the Structured AI Development Source Session (e.g. "You're now an architect and decision maker").
+_Avoid_: six takeaways (collides with Takeaway)
+
+**Recurring Signal**:
+A tool or idea that came up independently in more than one Source Session, which suggests it matters beyond any one talk. The Aspire dashboard is one.
+_Avoid_: theme, coincidence
 
 **Non-Developer Angle**:
 An optional one-liner per Takeaway explaining why it matters to managers, QA and designers. It can be dropped without changing the deck.
@@ -59,7 +71,15 @@ Giving AI-assisted coding a deliberate workflow (specs, interviews, plans, tests
 _Avoid_: spec-driven development (one technique within it), vibe coding (its opposite)
 
 **Kiro**:
-An AI IDE with structured development built in. It walks you from requirements to design to tasks before any code is written. It is where the presenter first saw the idea at CodeStock.
+An AI IDE with structured development built in. It walks you from requirements to design to tasks before any code is written. It is where the presenter first saw the idea at CodeStock. Its building blocks are steering, skills, hooks and specs; Skill Packs offer the same building blocks, packaged differently.
+
+**EARS**:
+Easy Approach to Requirements Syntax: a constrained sentence pattern for requirements (*WHEN … THE SYSTEM SHALL …*). Kiro writes its acceptance criteria in it.
+_Avoid_: Given/When/Then (a different, test-oriented format)
+
+**Steering**:
+Standing guidance given to the agent that applies to every task, such as a project's conventions and vocabulary. In this repo, `AGENTS.md` plays that role.
+_Avoid_: system prompt, rules (`CONTEXT.md` is the glossary that steering points at, not steering itself)
 
 **Skill Pack**:
 A published set of agent skills that brings structured development to general-purpose coding agents. Examples: Matt Pocock's skills and poteto's pstack.
@@ -72,4 +92,11 @@ Short documents that each record one significant architectural decision and the 
 Making a system's internal behaviour visible through telemetry, using the OpenTelemetry standard.
 
 **Resilience (Polly)**:
-Keeping a system working when the things it depends on fail, using the Polly library.
+Keeping a system working when the things it depends on fail, using the Polly library. Its Source Session was about chaos engineering; the deck deliberately focuses on resilience and uses chaos (injecting faults) only to show resilience working.
+
+**Shift Left**:
+The observability Source Session's central theme: telemetry belongs in development from the start, so dev and prod tell the same story. It frames the Observability Takeaway.
+_Avoid_: add observability later
+
+**Aspire Dashboard**:
+A lightweight local viewer for traces, logs and metrics. It is a Recurring Signal, mentioned in both the observability and resilience Source Sessions, as the place to start before production tooling such as Grafana or New Relic.

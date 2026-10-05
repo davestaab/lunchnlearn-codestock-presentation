@@ -1,63 +1,98 @@
 # Requirements: CodeStock Lunch & Learn Deck
 
 ## Overview
-A Slidev deck for the internal Lunch & Learn "What I Brought Back From CodeStock". It covers four Takeaways (Structured AI Development, ADRs, Observability with OpenTelemetry, and Resilience with Polly), and each one follows the same five Beats. A Discussion fills the second half of the session. The deck Dogfoods its own first two Takeaways: the repo's `CONTEXT.md`, its Kiro-style spec and its ADRs are the concrete examples. Terms follow `CONTEXT.md`, and decisions follow `docs/adr/`.
+A Slidev deck for the internal Lunch & Learn "What I Brought Back From CodeStock". It covers four Takeaways (Structured AI Development, ADRs, Observability with OpenTelemetry, and Resilience with Polly), and each one follows the same five Beats. A Discussion fills the second half of the session. The deck Dogfoods its own first two Takeaways: the repo's `CONTEXT.md`, this Kiro-style spec and its ADRs are the concrete examples. Terms follow `CONTEXT.md`, and decisions follow `docs/adr/`.
+
+Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the requirements notation Kiro uses and the Structured AI Development Source Session recommended.
 
 ## User Stories
 
-### Follow the four Takeaways
+### 1. Follow the four Takeaways
 **As an** Audience member (mostly .NET developers, plus managers, QA and designers)
 **I want** each Takeaway presented in the same short, predictable shape
 **So that** I understand what each idea is and what I could try next week, in about 5 minutes each
 
 #### Acceptance Criteria
-- [ ] Given the deck opens, when I advance past the title slide, then I see one "What is CodeStock" slide followed by an agenda that states The Arc: plan before you prompt → record why → see it run → keep it running
-- [ ] Given any of the four Takeaways, when I step through it, then it presents the Beats in order: what it is → the problem it solves → a concrete example → First Step → Discussion Prompt
-- [ ] Given the Takeaways, when I go through the deck, then they appear in Arc order: Structured AI Development, ADRs, Observability (OpenTelemetry), Resilience (Polly)
-- [ ] Given each Takeaway, when I reach its First Step, then it names exactly one small action that assumes the team is starting from zero (for OpenTelemetry, extending it to projects that don't use it yet)
-- [ ] Given any slide with code, when it is shown, then it uses a highlighted snippet and needs no live demo
-- [ ] Given each Takeaway, when I open the presenter notes, then they contain a one-line Non-Developer Angle
+- [ ] 1.1 WHEN the presenter advances past the title slide THE DECK SHALL show one "What is CodeStock" slide followed by an agenda that states The Arc: plan before you prompt → record why → see it run → keep it running.
+- [ ] 1.2 THE DECK SHALL present the Takeaways in Arc order: Structured AI Development, ADRs, Observability (OpenTelemetry), Resilience (Polly).
+- [ ] 1.3 WHEN a Takeaway is presented THE DECK SHALL show its Beats in order: what it is → the problem it solves → a concrete example → First Step → Discussion Prompt.
+- [ ] 1.4 WHEN a Takeaway is presented THE DECK SHALL credit its Source Session's title and speaker.
+- [ ] 1.5 WHEN a Takeaway reaches its First Step THE DECK SHALL name exactly one small action that assumes the team is starting from zero.
+- [ ] 1.6 WHEN a slide contains code THE DECK SHALL show it as a highlighted snippet that needs no live demo.
+- [ ] 1.7 WHEN the presenter opens a Takeaway's speaker notes THE DECK SHALL include a one-line Non-Developer Angle.
 
-### See the practices used on the deck itself (Dogfood)
+### 2. Structured AI Development, with the deck as its own example
 **As an** Audience member
-**I want** the Structured AI Development and ADR Takeaways illustrated with artifacts from the deck's own repo
+**I want** Structured AI Development illustrated with artifacts from the deck's own repo
 **So that** the examples are real, not hypothetical
 
 #### Acceptance Criteria
-- [ ] Given the Structured AI Development Takeaway, when it reaches the concrete example, then it shows the grilling session producing `CONTEXT.md` (Matt Pocock's skills) next to this Kiro-style requirements → design → tasks spec, and labels the spec as Kiro-*style*, not Kiro
-- [ ] Given the Structured AI Development Takeaway, when it introduces examples, then it presents Kiro as a dedicated IDE and Skill Packs (Matt Pocock's skills, pstack) as structure added to the agent you already use
-- [ ] Given the end of Structured AI Development, when I move to ADRs, then a transition slide notes that the grilling session produced ADRs
-- [ ] Given the ADR Takeaway, when it reaches the concrete example, then it shows `docs/adr/0001-slidev-for-the-deck.md`
+- [ ] 2.1 WHEN the Takeaway introduces its examples THE DECK SHALL show Kiro's building blocks (steering, skills, hooks, specs) next to their equivalents in a general-purpose agent, presented as the same building blocks packaged differently, with this repo's real file for each (e.g. `AGENTS.md` for steering).
+- [ ] 2.2 WHEN the Takeaway reaches its concrete example THE DECK SHALL show the grilling session producing `CONTEXT.md` (Matt Pocock's skills) next to this Kiro-style requirements → design → tasks spec, labelled as Kiro-*style*, not Kiro.
+- [ ] 2.3 WHEN the Takeaway shows the spec THE DECK SHALL include at least one real EARS acceptance criterion from this file.
+- [ ] 2.4 WHEN the Takeaway shows the Source Session's Six Principles THE DECK SHALL call them "Six Principles", not "takeaways".
+- [ ] 2.5 WHEN the Takeaway reaches its First Step THE DECK SHALL keep the step agent-agnostic (try a Skill Pack in whichever agent your project uses), using Codex as the worked example.
+- [ ] 2.6 WHEN the Takeaway reaches its Discussion Prompt THE DECK SHALL ask whether the Audience agrees that "you're now an architect and decision maker."
+- [ ] 2.7 WHEN the Takeaway ends THE DECK SHALL show a transition slide noting that the grilling session also produced this repo's ADRs.
 
-### Run the Discussion
-**As the** presenter
-**I want** the Discussion Prompts gathered on one slide after the Takeaways
-**So that** the room can choose where to start and talk for 20+ minutes
-
-#### Acceptance Criteria
-- [ ] Given all four Takeaways are done, when I advance, then one slide lists the four Discussion Prompts, each labelled with its Takeaway, ready for a show of hands
-- [ ] Given the Discussion is over, when I advance, then a resources slide links to the relevant docs for Kiro, Matt Pocock's skills, pstack, ADRs, OpenTelemetry .NET and Polly
-- [ ] Given the speaker notes have been scanned and fact-checked, when a Takeaway draws on a CodeStock session, then that session's speaker is credited on the Takeaway's slides
-
-### Share the deck afterwards
-**As an** Audience member who couldn't attend, or wants to revisit
-**I want** to open the deck after the talk
-**So that** I can follow the links and examples at my own pace
+### 3. ADRs, with the deck's own decisions as examples
+**As an** Audience member
+**I want** to see real, fully worked ADRs
+**So that** I know what a good one looks like before writing my own
 
 #### Acceptance Criteria
-- [ ] Given the repo, when it is deployed, then it builds and publishes to Netlify using `netlify.toml` (no Vercel config is present)
-- [ ] Given the finished deck, when `pnpm run export` is run, then a PDF is produced with every slide legible
-- [ ] Given any project OpenTelemetry snippet in the deck, when it is published, then it contains no internal service names, internal URLs or customer data
+- [ ] 3.1 WHEN the ADR Takeaway reaches its concrete example THE DECK SHALL show ADR 0001 as a strong ADR, including Status, Context, Decision, Considered Options and Consequences.
+- [ ] 3.2 WHEN the ADR Takeaway has shown ADR 0001 THE DECK SHALL show ADR 0002 as a borderline ADR, alongside the three-question test (hard to reverse, surprising without context, a real trade-off) for when to write one.
+- [ ] 3.3 WHEN the ADR Takeaway explains what an ADR is THE DECK SHALL note that a one-paragraph ADR is also valid, and that the extra sections are optional.
+- [ ] 3.4 WHERE the Source Session notes are thin THE DECK SHALL draw the "what it is" and "problem it solves" beats from Michael Nygard's original ADR article, fact-checked by the presenter.
+- [ ] 3.5 WHEN the ADR Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Name a decision in our codebase nobody can explain anymore. What would it have cost to write it down?"
+
+### 4. Observability and Resilience
+**As a** .NET developer in the Audience
+**I want** OpenTelemetry and Polly shown through small .NET snippets
+**So that** I can see how I would start on my own project
+
+#### Acceptance Criteria
+- [ ] 4.1 WHEN the Observability Takeaway begins THE DECK SHALL frame it around Shift Left, the Source Session's theme that observability starts in dev, not in production.
+- [ ] 4.2 WHEN the Observability Takeaway reaches its First Step THE DECK SHALL recommend running the Aspire dashboard locally to view traces.
+- [ ] 4.3 WHEN the Aspire dashboard is first mentioned THE DECK SHALL note that it is a Recurring Signal, mentioned in both the observability and resilience Source Sessions.
+- [ ] 4.4 WHEN the Resilience Takeaway begins THE DECK SHALL state that it deliberately shifts the focus from the Source Session's chaos engineering to resilience.
+- [ ] 4.5 WHEN the Resilience Takeaway reaches its concrete example THE DECK SHALL show a resilience pipeline (e.g. `Microsoft.Extensions.Http.Resilience`) and then a chaos strategy that injects a fault to show the pipeline working.
+- [ ] 4.6 WHEN the presenter opens the Resilience Takeaway's speaker notes THE DECK SHALL include EF Core's retry-on-failure option, in case someone asks.
+- [ ] 4.7 WHEN the Observability Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Do our dev and prod environments tell the same story?"
+- [ ] 4.8 WHEN the Resilience Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Which dependency, if it went down for 10 minutes, would take us down with it?"
+- [ ] 4.9 IF a project OpenTelemetry snippet is used THEN THE DECK SHALL contain no internal service names, internal URLs or customer data.
+
+### 5. Run the Discussion and share the deck
+**As the** presenter and the Audience
+**I want** the Discussion Prompts gathered in one place and the deck available afterwards
+**So that** the room can pick where to start, and anyone can revisit the links later
+
+#### Acceptance Criteria
+- [ ] 5.1 WHEN all four Takeaways are done THE DECK SHALL show one slide listing the four Discussion Prompts, each labelled with its Takeaway, ready for a show of hands.
+- [ ] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
+- [ ] 5.3 WHEN the repo is deployed THE DECK SHALL build and publish to Netlify using `netlify.toml`.
+- [ ] 5.4 WHEN `pnpm run export` is run THE DECK SHALL produce a PDF with every slide legible.
+
+## Source Sessions
+Taken from `notes/CodeStock 2026 Session Notes.md` (gitignored).
+
+| Takeaway | Session | Speaker |
+|---|---|---|
+| Structured AI Development | What the Spec! Battle-Tested Practices for Spec-Driven Development Using Kiro | Chris Gonzalez |
+| ADRs | Navigating the Maze of Communicating Architecture Decisions | Chad Green |
+| Observability (OpenTelemetry) | Shift Observability Left: Why It Starts in Dev | Victor Lyuboslavsky |
+| Resilience (Polly) | Polly Want a 500? Chaos Engineering for .NET Apps | Victor Frye |
 
 ## Out of Scope
 - Live demos of Kiro, OpenTelemetry trace viewers or Polly
-- Frontend-specific content (browser tracing, client-side retries)
+- Frontend-specific content (browser tracing, client-side retries, Cockatiel)
+- Chaos engineering beyond the single fault-injection example: no game days or feature management
 - Deep-dive or tutorial-level coverage of any Takeaway
 - Trying pstack on this deck; it is mentioned only
 - Committing scanned notes (`notes/` is gitignored)
 - Custom Slidev theme work beyond what the existing themes provide
 
 ## Open Questions
-- Which CodeStock sessions and speakers map to each Takeaway? This is blocked until the paper notes are scanned.
 - Which project OpenTelemetry snippets are worth showing, once they've been cleaned up?
-- What is the exact wording of each Discussion Prompt?
+- What is the URL of Chris Gonzalez's example repo, if it should go on the resources slide?

@@ -27,7 +27,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 **So that** the examples are real, not hypothetical
 
 #### Acceptance Criteria
-- [ ] 2.1 WHEN the Takeaway introduces its examples THE DECK SHALL show Kiro's building blocks (steering, skills, hooks, specs) next to their equivalents in a general-purpose agent, presented as the same building blocks packaged differently, with this repo's real file for each (e.g. `AGENTS.md` for steering).
+- [ ] 2.1 WHEN the Takeaway introduces its examples THE DECK SHALL show Kiro's building blocks (steering, skills, hooks, specs) next to their equivalents in a general-purpose agent, presented as the same building blocks packaged differently, with real files for each: Chris Gonzalez's kiro-quickstart repo on the Kiro side (credited and linked) and this repo on the general-purpose side (e.g. `AGENTS.md` for steering). Where neither repo has a building block yet (currently hooks), THE DECK SHALL show it as empty and name it as the next thing to try.
 - [ ] 2.2 WHEN the Takeaway reaches its concrete example THE DECK SHALL show the grilling session producing `CONTEXT.md` (Matt Pocock's skills) next to this Kiro-style requirements → design → tasks spec, labelled as Kiro-*style*, not Kiro.
 - [ ] 2.3 WHEN the Takeaway shows the spec THE DECK SHALL include at least one real EARS acceptance criterion from this file.
 - [ ] 2.4 WHEN the Takeaway shows the Source Session's Six Principles THE DECK SHALL call them "Six Principles", not "takeaways".
@@ -70,7 +70,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 
 #### Acceptance Criteria
 - [ ] 5.1 WHEN all four Takeaways are done THE DECK SHALL show one slide listing the four Discussion Prompts, each labelled with its Takeaway, ready for a show of hands.
-- [ ] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
+- [ ] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Chris Gonzalez's example repo (https://github.com/chrismgonzalez/kiro-quickstart), Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
 - [ ] 5.3 WHEN the repo is deployed THE DECK SHALL build and publish to Netlify using `netlify.toml`.
 - [ ] 5.4 WHEN `pnpm run export` is run THE DECK SHALL produce a PDF with every slide legible.
 
@@ -95,4 +95,3 @@ Taken from `notes/CodeStock 2026 Session Notes.md` (gitignored).
 
 ## Open Questions
 - Which project OpenTelemetry snippets are worth showing, once they've been cleaned up?
-- What is the URL of Chris Gonzalez's example repo, if it should go on the resources slide?

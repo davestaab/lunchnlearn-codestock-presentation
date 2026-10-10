@@ -29,16 +29,16 @@ Making a system's internal behavior visible, using the **OpenTelemetry** standar
 
 <div class="grid grid-cols-3 gap-4 mt-10">
   <div class="border-2 border-primary rounded-lg p-4">
-    <div class="text-xl font-bold">Metrics</div>
-    <div class="opacity-80 mt-2">Measurements over time, such as request counts and timings. The summary view.</div>
+    <div class="text-xl font-bold">Traces</div>
+    <div class="opacity-80 mt-2">Follow one request through the system, so it leaves a trail.</div>
   </div>
   <div class="border-2 border-primary rounded-lg p-4">
     <div class="text-xl font-bold">Logs</div>
     <div class="opacity-80 mt-2">Timestamped records with the details.</div>
   </div>
   <div class="border-2 border-primary rounded-lg p-4">
-    <div class="text-xl font-bold">Traces</div>
-    <div class="opacity-80 mt-2">Follow one request through the system, so it leaves a trail.</div>
+    <div class="text-xl font-bold">Metrics</div>
+    <div class="opacity-80 mt-2">Measurements over time, such as request counts and timings. The summary view.</div>
   </div>
 </div>
 
@@ -46,8 +46,6 @@ Making a system's internal behavior visible, using the **OpenTelemetry** standar
 
 <!--
 Non-Developer Angle: traces turn "the app is slow" into "this one call to inventory takes 2 seconds", which is something QA can report and a manager can prioritize.
-
-todo: lets flip the order from high to low. traces -> logs -> metrics
 -->
 
 ---
@@ -157,17 +155,3 @@ Point your app's OTLP exporter at it (the default <code>localhost:4317</code> al
 <!--
 Starting from zero: no production tooling, no budget, no approvals. One container and the setup snippet from two slides ago.
 -->
-
----
-layout: center
-class: text-center
----
-
-# Discussion Prompt
-
-<div class="text-3xl mt-8 leading-relaxed">{{ takeaway.discussionPrompt }}</div>
-
-<script setup>
-import { takeawayById } from '../data/takeaways'
-const takeaway = takeawayById('observability')
-</script>

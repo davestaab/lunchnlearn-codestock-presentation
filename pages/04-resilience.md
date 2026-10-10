@@ -89,17 +89,3 @@ One package, one line. Then add the chaos handler in dev, and watch it hold up.
 <!--
 If someone asks about the database: EF Core's SQL Server provider has its own retry. Call EnableRetryOnFailure() in UseSqlServer(..., sql => sql.EnableRetryOnFailure()) to retry transient SQL errors.
 -->
-
----
-layout: center
-class: text-center
----
-
-# Discussion Prompt
-
-<div class="text-3xl mt-8 leading-relaxed">{{ takeaway.discussionPrompt }}</div>
-
-<script setup>
-import { takeawayById } from '../data/takeaways'
-const takeaway = takeawayById('resilience')
-</script>

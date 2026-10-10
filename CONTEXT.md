@@ -26,7 +26,7 @@ The open part of the Lunch & Learn after the Highlights, where attendees bring t
 _Avoid_: Q&A
 
 **Discussion Prompt**:
-The deliberately provocative question that ends each Takeaway. All four are collected again to open the Discussion, and the room picks which one to start with.
+The deliberately provocative question that goes with each Takeaway. All four are shown together to open the Discussion, not after each Takeaway, and the room picks which one to start with.
 _Avoid_: question, talking point
 <!-- #endregion glossary-excerpt -->
 
@@ -40,7 +40,7 @@ The thread connecting the four Takeaways in order: *plan before you prompt* (str
 _Avoid_: flow, theme
 
 **Beats**:
-The five-part shape every Takeaway follows: what it is → the problem it solves → a concrete example → First Step → Discussion Prompt.
+The four-part shape every Takeaway follows: what it is → the problem it solves → a concrete example → First Step. Its Discussion Prompt waits for the Discussion.
 _Avoid_: sections, template
 
 **First Step**:

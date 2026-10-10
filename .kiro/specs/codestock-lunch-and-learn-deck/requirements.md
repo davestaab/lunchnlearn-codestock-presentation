@@ -15,7 +15,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 #### Acceptance Criteria
 - [x] 1.1 WHEN the presenter advances past the title slide THE DECK SHALL show one "What is CodeStock" slide followed by an agenda that states The Arc: plan before you prompt → record why → see it run → keep it running.
 - [x] 1.2 THE DECK SHALL present the Takeaways in Arc order: Structured AI Development, ADRs, Observability (OpenTelemetry), Resilience (Polly).
-- [x] 1.3 WHEN a Takeaway is presented THE DECK SHALL show its Beats in order: what it is → the problem it solves → a concrete example → First Step → Discussion Prompt.
+- [x] 1.3 WHEN a Takeaway is presented THE DECK SHALL show its Beats in order: what it is → the problem it solves → a concrete example → First Step, and SHALL NOT show its Discussion Prompt until the Discussion.
 - [x] 1.4 WHEN a Takeaway is presented THE DECK SHALL credit its Source Session's title and speaker.
 - [x] 1.5 WHEN a Takeaway reaches its First Step THE DECK SHALL name exactly one small action that assumes the team is starting from zero.
 - [x] 1.6 WHEN a slide contains code THE DECK SHALL show it as a highlighted snippet that needs no live demo.
@@ -34,7 +34,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 <!-- #endregion ears-example -->
 - [x] 2.4 WHEN the Takeaway shows the Source Session's Six Principles THE DECK SHALL call them "Six Principles", not "takeaways".
 - [x] 2.5 WHEN the Takeaway reaches its First Step THE DECK SHALL keep the step agent-agnostic (try a Skill Pack in whichever agent your project uses), using Codex as the worked example.
-- [x] 2.6 WHEN the Takeaway reaches its Discussion Prompt THE DECK SHALL ask whether the Audience agrees that "you're now an architect and decision maker."
+- [x] 2.6 WHEN the Discussion slide lists the Structured AI Development Discussion Prompt THE DECK SHALL ask whether the Audience agrees that "you're now an architect and decision maker."
 - [x] 2.7 WHEN the Takeaway ends THE DECK SHALL show a transition slide noting that the grilling session also produced this repo's ADRs.
 
 ### 3. ADRs, with the deck's own decisions as examples
@@ -46,8 +46,8 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 - [x] 3.1 WHEN the ADR Takeaway reaches its concrete example THE DECK SHALL show ADR 0001 as a strong ADR, including Status, Context, Decision, Considered Options and Consequences.
 - [x] 3.2 WHEN the ADR Takeaway has shown ADR 0001 THE DECK SHALL show ADR 0002 as a borderline ADR, alongside the three-question test (hard to reverse, surprising without context, a real trade-off) for when to write one.
 - [x] 3.3 WHEN the ADR Takeaway explains what an ADR is THE DECK SHALL note that a one-paragraph ADR is also valid, and that the extra sections are optional.
-- [ ] 3.4 WHERE the Source Session notes are thin THE DECK SHALL draw the "what it is" and "problem it solves" beats from Michael Nygard's original ADR article, fact-checked by the presenter.
-- [x] 3.5 WHEN the ADR Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Name a decision in our codebase nobody can explain anymore. What would it have cost to write it down?"
+- [x] 3.4 WHERE the Source Session notes are thin THE DECK SHALL draw the "what it is" and "problem it solves" beats from Michael Nygard's original ADR article, fact-checked by the presenter.
+- [x] 3.5 WHEN the Discussion slide lists the ADR Discussion Prompt THE DECK SHALL ask "Name a decision in our codebase nobody can explain anymore. What would it have cost to write it down?"
 
 ### 4. Observability and Resilience
 **As a** .NET developer in the Audience
@@ -61,8 +61,8 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 - [x] 4.4 WHEN the Resilience Takeaway begins THE DECK SHALL state that it deliberately shifts the focus from the Source Session's chaos engineering to resilience.
 - [x] 4.5 WHEN the Resilience Takeaway reaches its concrete example THE DECK SHALL show a resilience pipeline (e.g. `Microsoft.Extensions.Http.Resilience`) and then a chaos strategy that injects a fault to show the pipeline working.
 - [x] 4.6 WHEN the presenter opens the Resilience Takeaway's speaker notes THE DECK SHALL include EF Core's retry-on-failure option, in case someone asks.
-- [x] 4.7 WHEN the Observability Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Do our dev and prod environments tell the same story?"
-- [x] 4.8 WHEN the Resilience Takeaway reaches its Discussion Prompt THE DECK SHALL ask "Which dependency, if it went down for 10 minutes, would take us down with it?"
+- [x] 4.7 WHEN the Discussion slide lists the Observability Discussion Prompt THE DECK SHALL ask "Do our dev and prod environments tell the same story?"
+- [x] 4.8 WHEN the Discussion slide lists the Resilience Discussion Prompt THE DECK SHALL ask "Which dependency, if it went down for 10 minutes, would take us down with it?"
 - [x] 4.9 IF a project OpenTelemetry snippet is used THEN THE DECK SHALL contain no internal service names, internal URLs or customer data.
 
 ### 5. Run the Discussion and share the deck
@@ -72,7 +72,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 
 #### Acceptance Criteria
 - [x] 5.1 WHEN all four Takeaways are done THE DECK SHALL show one slide listing the four Discussion Prompts, each labelled with its Takeaway, ready for a show of hands.
-- [ ] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Chris Gonzalez's example repo (https://github.com/chrismgonzalez/kiro-quickstart), Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
+- [x] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Chris Gonzalez's example repo (https://github.com/chrismgonzalez/kiro-quickstart), Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
 - [ ] 5.3 WHEN the repo is deployed THE DECK SHALL build and publish to Netlify using `netlify.toml`.
 - [x] 5.4 WHEN `pnpm run export` is run THE DECK SHALL produce a PDF with every slide legible.
 

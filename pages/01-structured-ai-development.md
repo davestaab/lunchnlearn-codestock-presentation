@@ -145,8 +145,8 @@ From Chris Gonzalez's session
 6. Discipline = freedom.
 
 <!--
-FACT-CHECK: wording is from my handwritten notes; confirm against the speaker's slides if available.
-Number 2 is the one I want to argue about, so it's our Discussion Prompt.
+Fact-checked: the Six Principles wording, from Chris Gonzalez's session.
+Number 2 is the one I want to argue about, so it's this Takeaway's Discussion Prompt. We'll come back to it in the Discussion.
 -->
 
 ---
@@ -164,20 +164,6 @@ Install <strong>one</strong> Skill Pack in the agent your project already uses, 
 <!--
 Starting from zero: no Kiro, no new IDE. One Skill Pack, one ticket, then decide if it was worth it.
 -->
-
----
-layout: center
-class: text-center
----
-
-# Discussion Prompt
-
-<div class="text-3xl mt-8 leading-relaxed">{{ takeaway.discussionPrompt }}</div>
-
-<script setup>
-import { takeawayById } from '../data/takeaways'
-const takeaway = takeawayById('structured-ai')
-</script>
 
 ---
 layout: center

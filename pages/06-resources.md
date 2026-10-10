@@ -13,7 +13,7 @@ layout: default
 - Kiro: [kiro.dev](https://kiro.dev)
 - Chris Gonzalez's example repo: [github.com/chrismgonzalez/kiro-quickstart](https://github.com/chrismgonzalez/kiro-quickstart)
 - Matt Pocock's skills: [github.com/mattpocock/skills](https://github.com/mattpocock/skills)
-- pstack, by Lauren Tan (poteto): <span class="text-red-600">link to confirm</span>
+- pstack, by Lauren Tan (poteto): [x.com/poteto/article/2094457600259842065](https://x.com/poteto/article/2094457600259842065)
 
 </div>
 
@@ -21,7 +21,7 @@ layout: default
 
 **ADRs**
 
-- Michael Nygard, *Documenting Architecture Decisions*: [cognitect.com/blog/2011/11/15/documenting-architecture-decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+- Michael Nygard's 2011 blog post, "Documenting Architecture Decisions": [cognitect.com/blog/2011/11/15/documenting-architecture-decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
 
 </div>
 
@@ -46,13 +46,9 @@ layout: default
 </div>
 
 <div class="mt-8 text-sm opacity-70">
-This deck, its <code>CONTEXT.md</code>, spec and ADRs are all in its repo.
+This deck, its <code>CONTEXT.md</code>, spec and ADRs: <a href="https://github.com/davestaab/lunchnlearn-codestock-presentation">github.com/davestaab/lunchnlearn-codestock-presentation</a>
 </div>
 
 <!--
-TODO before presenting: confirm the pstack URL. There's no repo at github.com/poteto/pstack; only community ports were found.
-
-1. add pstack url: https://x.com/poteto/article/2094457600259842065?lang=en
-2. add repo url.
-3. add hosted url
+TODO before presenting: add the hosted (Netlify) URL once the deck is deployed.
 -->

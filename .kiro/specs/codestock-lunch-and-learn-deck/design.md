@@ -61,7 +61,7 @@ The values come straight from the requirements' Source Sessions table and the Di
 - **Headmatter:** `theme: seriph`, `title: What I Brought Back From CodeStock`, `duration: 45min`, `exportFilename: codestock-lunch-and-learn`, `transition: slide-left`. The template's random `background: https://cover.sli.dev` is replaced with a local copy of a chosen Unsplash photo (`public/title-background.jpg`, credited in the title slide's speaker notes), so every build and the PDF look the same.
 - **Slides:**
   1. Title, with the tagline "Bring your lunch, bring an opinion."
-  2. What is CodeStock: community-run, Knoxville, the four sessions attended. The presenter fact-checks this slide.
+  2. What is CodeStock: community-run, Knoxville, the four sessions picked to highlight and share (out of several attended). The presenter fact-checks this slide.
   3. Agenda: `<ArcStrip />`, with no current step, plus "then: Discussion" (1.1).
 - **Imports:** `src: ./pages/0N-….md` for each page, in order.
 
@@ -91,7 +91,8 @@ Every Takeaway page follows the Beats (1.3). Each Beat is one slide unless noted
 3. The problem it solves
 4. Concrete example (may be 2–3 slides)
 5. First Step: one action (1.5)
-6. Discussion Prompt, rendered from `takeaways[i].discussionPrompt` so it matches the Discussion slide
+
+A Takeaway page has no Discussion Prompt slide. The prompts appear only on the Discussion slide, which renders them from `takeaways`, so the room isn't invited to discuss before the Discussion begins.
 
 Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it is" slide carries the one-line Non-Developer Angle (1.7).
 
@@ -108,16 +109,14 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
   - A follow-on slide shows one real EARS criterion, imported by region from `requirements.md`.
 - **Six Principles (2.4):** the list, credited to Chris Gonzalez, with "You're now an architect and decision maker" highlighted.
 - **First Step (2.5):** "Install one Skill Pack in the agent your project uses and run it on your next ticket." Codex is the worked example: the file is `AGENTS.md`, and skills go wherever your agent loads them.
-- **Discussion Prompt (2.6).**
 - **Transition (2.7):** "This session also produced this repo's ADRs →".
 
 #### `pages/02-adrs.md`
-- **What it is:** a lightweight record of one decision and why it was made, from Chad Green's notes plus Nygard (3.4). A one-paragraph ADR is valid, and the extra sections are optional (3.3).
+- **What it is:** a lightweight record of one decision and why it was made, from Chad Green's notes plus Nygard (3.4). Present it as Nygard's blog post, with its title in quotes, so it isn't mistaken for a book. A one-paragraph ADR is valid, and the extra sections are optional (3.3).
 - **Problem:** decisions outlive the people who remember why they were made.
 - **Concrete example (3.1):** `<<< @/docs/adr/0001-slidev-for-the-deck.md md`, spread over 1–2 slides with `maxHeight` so the PDF stays legible.
 - **Borderline example (3.2):** an excerpt from ADR 0002, next to the three-question test: hard to reverse, surprising without context, a real trade-off. 0002 fails the first question, and the slide says so.
 - **First Step:** "Write an ADR for the next real decision your team makes."
-- **Discussion Prompt (3.5).**
 
 #### `pages/03-observability.md`
 - **Title:** `<TakeawayTitle id="observability" />`, followed by a Shift Left framing slide: "Observability starts in dev, not in production" (4.1).
@@ -130,7 +129,6 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
   - `snippets/otel-custom-span.cs`.
 - **Aspire (4.3):** a `<Callout label="Recurring Signal">` saying the Aspire dashboard came up in *both* the observability and resilience Source Sessions.
 - **First Step (4.2):** `snippets/aspire-dashboard.sh`, with "point your local OTLP exporter at it and look at a trace."
-- **Discussion Prompt (4.7).**
 
 #### `pages/04-resilience.md`
 - **Title:** `<TakeawayTitle id="resilience" focusNote="Victor Frye's session was about chaos engineering. We're focusing on resilience, and using chaos only to prove it works." />` (4.4).
@@ -140,7 +138,6 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
   - `snippets/resilience-pipeline.cs`, using `AddStandardResilienceHandler()`.
   - `snippets/resilience-chaos.cs`, which adds a chaos fault or outcome strategy to the same client to show the pipeline absorbing it. It has a one-line back-reference to Aspire as a place to watch it happen.
 - **First Step:** "Add the standard resilience handler to one flaky `HttpClient`."
-- **Discussion Prompt (4.8).**
 - **Speaker notes (4.6):** the EF Core SQL Server provider's `EnableRetryOnFailure()` covers database retries.
 
 #### `pages/05-discussion.md`

@@ -21,8 +21,12 @@ A Lunch & Learn
 Bring your lunch, bring an opinion.
 </div>
 
+<div class="abs-br m-4 text-xs opacity-60">
+Photo by <a href="https://unsplash.com/@nottwentyseven">Niklas König</a> on <a href="https://unsplash.com/photos/vintage-computer-with-a-crt-monitor-and-floppy-drives-1cTFuvI14J4">Unsplash</a>
+</div>
+
 <!--
-Background photo: Unsplash, https://unsplash.com/photos/hoZeHN9fxvk (photographer credit TBD).
+Background photo by Niklas König on Unsplash: https://unsplash.com/photos/vintage-computer-with-a-crt-monitor-and-floppy-drives-1cTFuvI14J4
 
 Welcome everyone. Four ideas from CodeStock, about 5 minutes each, then the rest of the hour is Discussion.
 
@@ -37,7 +41,7 @@ layout: default
 
 - A **community-run** tech conference in **Knoxville, TN**
 - Sessions across languages, process, AI and soft skills
-- I attended four sessions, and each became a Takeaway:
+- I picked four sessions to highlight and share, one per Takeaway:
 
 <div class="grid grid-cols-2 gap-3 mt-6 text-sm text-left">
   <div v-for="t in takeaways" :key="t.id" class="border border-gray-400/30 rounded px-3 py-2">
@@ -51,9 +55,7 @@ import { takeaways } from './data/takeaways'
 </script>
 
 <!--
-FACT-CHECK before presenting: the conference description (community-run, Knoxville) and the session titles and speakers, against the printed schedule.
-
-todo: fix i attended sessions
+Fact-checked: the conference description, session titles and speakers.
 -->
 
 ---

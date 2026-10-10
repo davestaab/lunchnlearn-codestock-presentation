@@ -5,7 +5,8 @@ layout: center
 <TakeawayTitle id="adrs" />
 
 <!--
-Chad Green's session notes are thin (two lines), so the "what" and "why" here lean on Michael Nygard's original 2011 article that started ADRs. FACT-CHECK both slides against it: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+Chad Green's session notes are thin (two lines), so the "what" and "why" here lean on Michael Nygard's 2011 blog post that started ADRs (an article, not a book): https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+Fact-checked: the "What it is" and "The problem it solves" slides, against the post.
 -->
 
 ---
@@ -29,7 +30,7 @@ A short text file that records **one** significant decision, and **why** it was 
 - **A one-paragraph ADR is valid.** Extra sections, such as Considered Options, are optional.
 
 <!--
-The five sections are Nygard's original format. Considered Options comes from later templates like MADR.
+The five sections are Nygard's original format, from his blog post. Considered Options comes from later templates like MADR.
 Non-Developer Angle: ADRs are the answer to "why on earth did we build it this way?", readable by anyone, without digging through old chat threads.
 -->
 
@@ -46,7 +47,7 @@ When a newcomer doesn't know why, they have two bad choices:
 - **Blindly accept it**, even after the reasons stop being true
 - **Blindly change it**, and break the thing it was protecting
 
-<div class="mt-8 opacity-70">After Michael Nygard, <em>Documenting Architecture Decisions</em> (2011)</div>
+<div class="mt-8 opacity-70">From Michael Nygard's 2011 blog post, "Documenting Architecture Decisions"</div>
 
 ---
 
@@ -123,22 +124,4 @@ One paragraph is enough: what you decided, and why. Commit it to <code>docs/adr/
 
 <!--
 Starting from zero: don't backfill old decisions. Start with the next one.
--->
-
----
-layout: center
-class: text-center
----
-
-# Discussion Prompt
-
-<div class="text-3xl mt-8 leading-relaxed">{{ takeaway.discussionPrompt }}</div>
-
-<script setup>
-import { takeawayById } from '../data/takeaways'
-const takeaway = takeawayById('adrs')
-</script>
-
-<!--
-lets move the discussion prompts to the end slide and not show them for each section
 -->

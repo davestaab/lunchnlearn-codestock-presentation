@@ -101,8 +101,8 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
 - **Building blocks mapping (2.1):** a table with the columns Building block | Kiro ([kiro-quickstart](https://github.com/chrismgonzalez/kiro-quickstart)) | General-purpose agent (this repo):
   - Steering: `.kiro/steering/` | `AGENTS.md`
   - Skills: `.kiro/skills/` | Matt Pocock's skills, pstack
-  - Hooks: empty | empty, labelled "next thing to try"
-  - Specs: `.kiro/specs/task-tracker-cli-poc` | `.kiro/specs/codestock-lunch-and-learn-deck`
+  - Hooks: `.kiro/hooks/` (a quality-check hook and a docs-sync hook) | empty, labelled "next thing to try"
+  - Specs: `.kiro/specs/` (only on the repo's `demo/*` branches, e.g. `task-creation-and-storage` on `demo/03-tasks`; `main` has none) | `.kiro/specs/codestock-lunch-and-learn-deck`
 - **Concrete example (2.2, 2.3):**
   - A two-column slide (`layout: two-cols`). On the left: "grilling session → `CONTEXT.md`", with a short excerpt imported from `CONTEXT.md`. On the right: "Kiro-*style* spec", with the file tree of `.kiro/specs/codestock-lunch-and-learn-deck/`.
   - A follow-on slide shows one real EARS criterion, imported by region from `requirements.md`.
@@ -151,7 +151,7 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
 
 ## Key Implementation Details
 - **Real files, imported, not copied.** Dogfood slides use `<<< @/AGENTS.md`, `<<< @/CONTEXT.md#region`, `<<< @/docs/adr/0001-….md` and so on. Editing a file updates the slide on the next build, which keeps the Dogfood honest.
-- **Markdown region markers.** For 2.3, wrap one criterion in `requirements.md` with `<!-- #region ears-example -->` / `<!-- #endregion ears-example -->`. Use the same approach for a short excerpt in `CONTEXT.md`. First check that Slidev 53's snippet import honours HTML-comment regions in `.md` files. If it doesn't, fall back to line-range highlighting of the whole file, or a hand-copied excerpt with a "from requirements.md" caption.
+- **Markdown region markers.** For 2.3, wrap one criterion in `requirements.md` with `<!-- #region ears-example -->` / `<!-- #endregion ears-example -->`. Use the same approach for a short excerpt in `CONTEXT.md`. Slidev 53's snippet import honours HTML-comment regions in `.md` files (checked with a probe build). The `CONTEXT.md` excerpt is `glossary-excerpt`, which covers **Discussion** and **Discussion Prompt**. Watch for one thing: a misspelled region name doesn't fail the build, because Slidev silently imports the whole file instead.
 - **Code is illustrative .NET** (1.6, `AGENTS.md`), using made-up service names such as `OrdersApi` and `inventory-service`. The snippets are written against the current OpenTelemetry .NET, `Microsoft.Extensions.Http.Resilience` and Polly v8 chaos (`Polly.Simmy`) APIs, and checked against their docs before the snippets are finalized.
 - **The open question about project OpenTelemetry snippets.** The design doesn't depend on them. If the presenter supplies them, they replace `snippets/otel-*.cs` one-for-one, after the clean-up in 4.9.
 - **Kiro side of the mapping.** It's written from kiro-quickstart's directory structure (file and folder names only), not by copying its contents. Credit it and link to it.
@@ -165,7 +165,7 @@ Each slide's final HTML comment is its speaker notes. Each Takeaway's "What it i
 - **Dogfood files change after the talk.** That's expected: the deck rebuilds from the current files. Any slide caption that quotes a file's content must use only text that is also in the import.
 - **Links in the PDF.** Every URL is also shown as visible text, so it can still be read in a printed copy.
 - **Netlify build.** `playwright-chromium` is only needed for the export, so the Netlify build (`pnpm run build`) doesn't depend on it.
-- **The Hooks row is empty on both sides.** Show it as an intentional empty cell with "next thing to try", not as a missing value.
+- **The Hooks row is empty on this repo's side.** Show it as an intentional empty cell with "next thing to try", not as a missing value.
 
 ## Testing Approach
 There is no app logic to unit-test. Verification is building the deck and walking through it against the EARS criteria:

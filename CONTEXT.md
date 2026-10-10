@@ -20,6 +20,7 @@ _Avoid_: topic, session, lesson
 The brief run-through of what matters most about a single Takeaway. It is meant as an overview, not a deep dive.
 _Avoid_: deep dive, tutorial
 
+<!-- #region glossary-excerpt -->
 **Discussion**:
 The open part of the Lunch & Learn after the Highlights, where attendees bring their own takeaways, questions and opinions.
 _Avoid_: Q&A
@@ -27,6 +28,7 @@ _Avoid_: Q&A
 **Discussion Prompt**:
 The deliberately provocative question that ends each Takeaway. All four are collected again to open the Discussion, and the room picks which one to start with.
 _Avoid_: question, talking point
+<!-- #endregion glossary-excerpt -->
 
 **Audience**:
 The people at the Lunch & Learn. Most are developers (largely .NET, and the frontend developers know the backend well enough), joined by managers, QA, designers and others. Every Takeaway has to make sense to people who don't write code.

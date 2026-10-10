@@ -58,7 +58,7 @@ The values come straight from the requirements' Source Sessions table and the Di
 ## Component / Module Design
 
 ### `slides.md` (entry)
-- **Headmatter:** `theme: seriph`, `title: What I Brought Back From CodeStock`, `duration: 45min`, `exportFilename: codestock-lunch-and-learn`, `transition: slide-left`. The template's random `background: https://cover.sli.dev` is removed, so every build and the PDF look the same.
+- **Headmatter:** `theme: seriph`, `title: What I Brought Back From CodeStock`, `duration: 45min`, `exportFilename: codestock-lunch-and-learn`, `transition: slide-left`. The template's random `background: https://cover.sli.dev` is replaced with a local copy of a chosen Unsplash photo (`public/title-background.jpg`, credited in the title slide's speaker notes), so every build and the PDF look the same.
 - **Slides:**
   1. Title, with the tagline "Bring your lunch, bring an opinion."
   2. What is CodeStock: community-run, Knoxville, the four sessions attended. The presenter fact-checks this slide.

@@ -1,5 +1,7 @@
 ---
 theme: seriph
+# local copy of an Unsplash photo, so every build and PDF look the same
+background: /title-background.jpg
 title: What I Brought Back From CodeStock
 info: |
   An internal Lunch & Learn: four Takeaways from CodeStock 2026, then a Discussion.
@@ -20,6 +22,8 @@ Bring your lunch, bring an opinion.
 </div>
 
 <!--
+Background photo: Unsplash, https://unsplash.com/photos/hoZeHN9fxvk (photographer credit TBD).
+
 Welcome everyone. Four ideas from CodeStock, about 5 minutes each, then the rest of the hour is Discussion.
 
 Disclaimer: This is just what I found interesting and the sessions I went to. Your experience may vary.

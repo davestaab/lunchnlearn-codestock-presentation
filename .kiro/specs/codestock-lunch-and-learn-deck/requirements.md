@@ -73,7 +73,7 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 #### Acceptance Criteria
 - [x] 5.1 WHEN all four Takeaways are done THE DECK SHALL show one slide listing the four Discussion Prompts, each labelled with its Takeaway, ready for a show of hands.
 - [x] 5.2 WHEN the Discussion is over THE DECK SHALL show a resources slide linking to Kiro, Chris Gonzalez's example repo (https://github.com/chrismgonzalez/kiro-quickstart), Matt Pocock's skills, pstack, Michael Nygard's ADR article, OpenTelemetry .NET, the Aspire dashboard and Polly.
-- [ ] 5.3 WHEN the repo is deployed THE DECK SHALL build and publish to Netlify using `netlify.toml`.
+- [x] 5.3 WHEN the repo is deployed THE DECK SHALL build and publish to Netlify using `netlify.toml`.
 - [x] 5.4 WHEN `pnpm run export` is run THE DECK SHALL produce a PDF with every slide legible.
 
 ## Source Sessions

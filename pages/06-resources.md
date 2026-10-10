@@ -46,9 +46,6 @@ layout: default
 </div>
 
 <div class="mt-8 text-sm opacity-70">
-This deck, its <code>CONTEXT.md</code>, spec and ADRs: <a href="https://github.com/davestaab/lunchnlearn-codestock-presentation">github.com/davestaab/lunchnlearn-codestock-presentation</a>
+This deck online: <a href="https://lunchnlearn-codestock-2026.netlify.app/">lunchnlearn-codestock-2026.netlify.app</a><br>
+Its <code>CONTEXT.md</code>, spec and ADRs: <a href="https://github.com/davestaab/lunchnlearn-codestock-presentation">github.com/davestaab/lunchnlearn-codestock-presentation</a>
 </div>
-
-<!--
-TODO before presenting: add the hosted (Netlify) URL once the deck is deployed.
--->

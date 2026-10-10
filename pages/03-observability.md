@@ -46,6 +46,8 @@ Making a system's internal behavior visible, using the **OpenTelemetry** standar
 
 <!--
 Non-Developer Angle: traces turn "the app is slow" into "this one call to inventory takes 2 seconds", which is something QA can report and a manager can prioritize.
+
+todo: lets flip the order from high to low. traces -> logs -> metrics
 -->
 
 ---

@@ -51,4 +51,8 @@ This deck, its <code>CONTEXT.md</code>, spec and ADRs are all in its repo.
 
 <!--
 TODO before presenting: confirm the pstack URL. There's no repo at github.com/poteto/pstack; only community ports were found.
+
+1. add pstack url: https://x.com/poteto/article/2094457600259842065?lang=en
+2. add repo url.
+3. add hosted url
 -->

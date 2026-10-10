@@ -138,3 +138,7 @@ class: text-center
 import { takeawayById } from '../data/takeaways'
 const takeaway = takeawayById('adrs')
 </script>
+
+<!--
+lets move the discussion prompts to the end slide and not show them for each section
+-->

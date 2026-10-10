@@ -21,6 +21,8 @@ Bring your lunch, bring an opinion.
 
 <!--
 Welcome everyone. Four ideas from CodeStock, about 5 minutes each, then the rest of the hour is Discussion.
+
+Disclaimer: This is just what I found interesting and the sessions I went to. Your experience may vary.
 -->
 
 ---
@@ -46,6 +48,8 @@ import { takeaways } from './data/takeaways'
 
 <!--
 FACT-CHECK before presenting: the conference description (community-run, Knoxville) and the session titles and speakers, against the printed schedule.
+
+todo: fix i attended sessions
 -->
 
 ---

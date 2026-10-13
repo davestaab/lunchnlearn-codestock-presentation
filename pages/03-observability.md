@@ -94,6 +94,8 @@ The <strong>Aspire dashboard</strong> came up in <em>both</em> the observability
 
 <!--
 The app only speaks OTLP, the standard protocol, so you can swap the backend without touching code.
+
+The ORNL uses __ (find out what it uses) as a backend.
 -->
 
 ---

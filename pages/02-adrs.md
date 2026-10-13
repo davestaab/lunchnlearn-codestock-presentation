@@ -5,8 +5,7 @@ layout: center
 <TakeawayTitle id="adrs" />
 
 <!--
-Chad Green's session notes are thin (two lines), so the "what" and "why" here lean on Michael Nygard's 2011 blog post that started ADRs (an article, not a book): https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
-Fact-checked: the "What it is" and "The problem it solves" slides, against the post.
+The "what" and "why" here lean on Michael Nygard's 2011 blog post that started ADRs (an article, not a book): https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
 -->
 
 ---

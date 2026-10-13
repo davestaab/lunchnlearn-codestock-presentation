@@ -5,7 +5,11 @@ layout: center
 <TakeawayTitle id="structured-ai" />
 
 <!--
-Chris Gonzalez's session was about Kiro, AWS's agentic AI IDE. The idea is bigger than one tool, so I'm calling it Structured AI Development.
+Chris Gonzalez's session was about Kiro, AWS's agentic AI IDE. 
+
+This talk uses Kiro but the idea is bigger than one tool, so I'm calling it Structured AI Development.
+
+This this session I've come across similar ideas in skill packs. AI skills designed to work together to accomplish AI work.
 -->
 
 ---
@@ -104,7 +108,7 @@ The same requirements → design → tasks flow, written by a general-purpose ag
 ```
 
 <!--
-Everything on this slide is imported from the repo at build time, so it's the real file, not a copy. The glossary is why every slide says "Takeaway" and "Discussion Prompt", never "topic" or "Q&A".
+The context excerpt on this slide is imported from the repo at build time, so it's the real file, not a copy. The glossary gives the presentation it's structure with the arc and beats.
 -->
 
 ---
@@ -120,7 +124,7 @@ Everything on this slide is imported from the repo at build time, so it's the re
 </style>
 
 <div class="mt-8 text-xl text-center">
-This slide is the one that satisfies it.
+This slide is the one that satisfies 2.3.
 </div>
 
 <div class="mt-8 text-sm opacity-70 text-center">
@@ -128,6 +132,8 @@ Imported from <code>requirements.md</code> at build time
 </div>
 
 <!--
+The requirements section of KIRO creates requirements in the EARS format.
+
 EARS came out of aerospace requirements work around 2000. Kiro writes its acceptance criteria in it. It's structured enough for an agent to check against, and plain enough for anyone in the room to read.
 -->
 
@@ -159,6 +165,14 @@ Install <strong>one</strong> Skill Pack in the agent your project already uses, 
 
 <div class="mt-12 opacity-80">
 <strong>Worked example, Codex:</strong> put your project's conventions in <code>AGENTS.md</code> (steering), and install the skills wherever your agent loads them.
+</div>
+
+<div class="mt-8 text-sm opacity-80">
+Two Skill Packs to start from:
+
+- Matt Pocock's skills: [github.com/mattpocock/skills](https://github.com/mattpocock/skills)
+- pstack, by Lauren Tan (poteto): [x.com/poteto/article/2094457600259842065](https://x.com/poteto/article/2094457600259842065)
+
 </div>
 
 <!--

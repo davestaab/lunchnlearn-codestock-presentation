@@ -28,11 +28,11 @@ Acceptance criteria are written in EARS (*WHEN … THE DECK SHALL …*), the req
 
 #### Acceptance Criteria
 - [x] 2.1 WHEN the Takeaway introduces its examples THE DECK SHALL show Kiro's building blocks (steering, skills, hooks, specs) next to their equivalents in a general-purpose agent, presented as the same building blocks packaged differently, with real files for each: Chris Gonzalez's kiro-quickstart repo on the Kiro side (credited and linked) and this repo on the general-purpose side (e.g. `AGENTS.md` for steering). Where this repo doesn't have a building block yet (currently hooks, which kiro-quickstart does have), THE DECK SHALL show it as empty and name it as the next thing to try.
-- [x] 2.2 WHEN the Takeaway reaches its concrete example THE DECK SHALL show the grilling session producing `CONTEXT.md` (Matt Pocock's skills) next to this Kiro-style requirements → design → tasks spec, labelled as Kiro-*style*, not Kiro.
 <!-- #region ears-example -->
+- [x] 2.2 WHEN the Takeaway reaches its concrete example THE DECK SHALL show the grilling session producing `CONTEXT.md` (Matt Pocock's skills) next to this Kiro-style requirements → design → tasks spec, labelled as Kiro-*style*, not Kiro.
 - [x] 2.3 WHEN the Takeaway shows the spec THE DECK SHALL include at least one real EARS acceptance criterion from this file.
-<!-- #endregion ears-example -->
 - [x] 2.4 WHEN the Takeaway shows the Source Session's Six Principles THE DECK SHALL call them "Six Principles", not "takeaways".
+<!-- #endregion ears-example -->
 - [x] 2.5 WHEN the Takeaway reaches its First Step THE DECK SHALL keep the step agent-agnostic (try a Skill Pack in whichever agent your project uses), using Codex as the worked example.
 - [x] 2.6 WHEN the Discussion slide lists the Structured AI Development Discussion Prompt THE DECK SHALL ask whether the Audience agrees that "you're now an architect and decision maker."
 - [x] 2.7 WHEN the Takeaway ends THE DECK SHALL show a transition slide noting that the grilling session also produced this repo's ADRs.

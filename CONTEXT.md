@@ -20,7 +20,6 @@ _Avoid_: topic, session, lesson
 The brief run-through of what matters most about a single Takeaway. It is meant as an overview, not a deep dive.
 _Avoid_: deep dive, tutorial
 
-<!-- #region glossary-excerpt -->
 **Discussion**:
 The open part of the Lunch & Learn after the Highlights, where attendees bring their own takeaways, questions and opinions.
 _Avoid_: Q&A
@@ -28,13 +27,12 @@ _Avoid_: Q&A
 **Discussion Prompt**:
 The deliberately provocative question that goes with each Takeaway. All four are shown together to open the Discussion, not after each Takeaway, and the room picks which one to start with.
 _Avoid_: question, talking point
-<!-- #endregion glossary-excerpt -->
 
 **Audience**:
 The people at the Lunch & Learn. Most are developers (largely .NET, and the frontend developers know the backend well enough), joined by managers, QA, designers and others. Every Takeaway has to make sense to people who don't write code.
 
 ## Structure
-
+<!-- #region glossary-excerpt -->
 **The Arc**:
 The thread connecting the four Takeaways in order: *plan before you prompt* (structured AI development) → *record why* (ADR) → *see it run* (observability) → *keep it running* (resilience). It is stated on the agenda.
 _Avoid_: flow, theme
@@ -42,7 +40,7 @@ _Avoid_: flow, theme
 **Beats**:
 The four-part shape every Takeaway follows: what it is → the problem it solves → a concrete example → First Step. Its Discussion Prompt waits for the Discussion.
 _Avoid_: sections, template
-
+<!-- #endregion glossary-excerpt -->
 **First Step**:
 The one small, concrete action the Audience could take next week to start a Takeaway. It assumes the team is starting from zero.
 _Avoid_: next steps, action items, how it applies here

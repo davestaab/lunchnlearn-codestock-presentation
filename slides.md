@@ -17,6 +17,11 @@ drawings:
 
 A Lunch & Learn
 
+<div class="mt-6 text-lg">
+Dave Staab<br>
+October 13, 2026
+</div>
+
 <div class="mt-12 text-xl opacity-80">
 Bring your lunch, bring an opinion.
 </div>
